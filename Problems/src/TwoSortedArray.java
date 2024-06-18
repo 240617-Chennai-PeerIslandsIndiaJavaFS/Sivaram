@@ -1,6 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class TwoSortedArray {
     public static void main(String[] args){
         int[] arr1={10,20,30,40};
@@ -11,7 +8,7 @@ public class TwoSortedArray {
 
     private static void mergeSortedArray(int[] arr1, int[] arr2) {
         int[] res = new int[ arr1.length + arr2.length];
-        
+
         for(int i=0; i < arr1.length; i++)
             res[i] = arr1[i];
 
