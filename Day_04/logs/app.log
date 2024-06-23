@@ -1,0 +1,8 @@
+2024-06-23 10:44:08 INFO  org.DA_Utilities.Player - Player created: sivaram
+2024-06-23 10:44:22 INFO  org.DA_Utilities.Potion - sivaram, you got a potion. Your Health: 3
+2024-06-23 10:44:59 INFO  org.DA_Utilities.Goblin - You face the Goblin
+2024-06-23 10:44:59 WARN  org.DA_Utilities.Goblin - You doesn't have Weapon! Player health: 2
+2024-06-23 10:45:05 INFO  org.DA_Utilities.Potion - sivaram, you got a potion. Your Health: 3
+2024-06-23 10:45:08 INFO  org.DA_Utilities.Goblin - You face the Goblin
+2024-06-23 10:45:08 WARN  org.DA_Utilities.Goblin - You doesn't have Weapon! Player health: 2
+2024-06-23 10:45:14 INFO  org.DA_Utilities.Weapon - Hurray, you got the Weapon!

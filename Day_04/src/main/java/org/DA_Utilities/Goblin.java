@@ -1,34 +1,43 @@
-package DA_Utilities;
+package org.DA_Utilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class Dragon extends  Creature implements Interactable{
+public class Goblin extends  Creature implements Interactable{
+    private static final Logger logger = LoggerFactory.getLogger(Goblin.class);
 
     int health = 5;
 
     @Override
     void attack(Creature target) {
-        System.out.println("You face the Dragon ");
+        logger.info("You face the Goblin");
+
         if(target instanceof Player){
             if(!(((Player) target).haveWeapon)){
                 //target.health--;
                 ((Player) target).takeDamage();
 
-                System.out.println("You don't have Weapon !");
-                System.out.println("Your health is : "+ target.health);
+                logger.warn("You doesn't have Weapon! Player health: {}", target.health);
+
                 System.out.println();
 
                 if(target.health <=0){
-                    System.out.println("Sorry, You lose the Game");
+                    logger.error("You lost the game");
+
                     System.exit(0);
                 }
             }
             else{
 
-                System.out.println("You had the Weapon, so health not get reduced");
+                logger.info("You have weapon , so retain its health");
                 System.out.println();
             }
-        };
 
+
+
+        };
     }
+
+
 
     @Override
     void takeDamage() {
@@ -41,4 +50,5 @@ public class Dragon extends  Creature implements Interactable{
             this.attack((Player)p);
         }
     }
+
 }

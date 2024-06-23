@@ -5,5 +5,20 @@ Problems/.gitignore
 
 Day_03/out/
 Day_03/.idea/
-Day_03/Problems.iml
+Day_03/Day_03.iml
 Day_03/.gitignore
+
+Day_04/**/target/
+
+# But do not ignore these specific files
+!Day_04/.mvn/wrapper/maven-wrapper.jar
+!Day_04/**/src/main/**/target/
+!Day_04/**/src/test/**/target/
+
+### IntelliJ IDEA ###
+Day_04/.idea/*
+Day_04/*.iws
+Day_04/*.iml
+Day_04/*.ipr
+Day_04/.gitignore
+
