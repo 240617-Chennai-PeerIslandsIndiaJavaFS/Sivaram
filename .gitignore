@@ -22,3 +22,16 @@ Day_04/*.iml
 Day_04/*.ipr
 Day_04/.gitignore
 
+Project_0/RevTaskManagementApplication/target/
+!Project_0/RevTaskManagementApplication/.mvn/wrapper/maven-wrapper.jar
+!Project_0/RevTaskManagementApplication/**/src/main/**/target/
+!Project_0/RevTaskManagementApplication/**/src/test/**/target/
+
+### IntelliJ IDEA ###
+Project_0/RevTaskManagementApplication/.idea/modules.xml
+Project_0/RevTaskManagementApplication/.idea/jarRepositories.xml
+Project_0/RevTaskManagementApplication/.idea/compiler.xml
+Project_0/RevTaskManagementApplication/.idea/libraries/
+Project_0/RevTaskManagementApplication/*.iws
+Project_0/RevTaskManagementApplication/*.iml
+Project_0/RevTaskManagementApplication/*.ipr
