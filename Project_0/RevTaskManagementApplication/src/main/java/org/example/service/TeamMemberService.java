@@ -14,7 +14,12 @@ public class TeamMemberService {
     TimelineDAO timeline_dao;
     MessageDAO message_dao;
 
-
+    public TeamMemberService(UserDAO user, TeamDetailDAO team_details_dao, TimelineDAO timeline_dao, MessageDAO message_dao) {
+        this.user = user;
+        this.team_details_dao = team_details_dao;
+        this.timeline_dao = timeline_dao;
+        this.message_dao = message_dao;
+    }
 
     public TeamMemberService(UserDAO user) {
         this.user = user;

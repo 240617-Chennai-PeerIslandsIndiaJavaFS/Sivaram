@@ -10,6 +10,9 @@ public class UserService {
     TeamMemberService team_member_service;
 
 
+    public UserService(UserDAO user_dao) {
+        this.user_dao = user_dao;
+    }
 
     public UserService() {
         user_dao = new UserDAO();

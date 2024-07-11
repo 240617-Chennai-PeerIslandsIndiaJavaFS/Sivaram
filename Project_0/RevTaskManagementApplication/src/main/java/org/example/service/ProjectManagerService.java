@@ -15,6 +15,16 @@ public class ProjectManagerService {
     MilestoneDAO milestone_dao;
     MessageDAO message_dao;
 
+    public ProjectManagerService(UserDAO user_dao, ClientDAO client_dao, ProjectDAO project_dao, TeamDAO team_dao, TeamDetailDAO team_details_dao, TaskDAO task_dao, MilestoneDAO milestone_dao, MessageDAO message_dao) {
+        this.user_dao = user_dao;
+        this.client_dao = client_dao;
+        this.project_dao = project_dao;
+        this.team_dao = team_dao;
+        this.team_details_dao = team_details_dao;
+        this.task_dao = task_dao;
+        this.milestone_dao = milestone_dao;
+        this.message_dao = message_dao;
+    }
 
     public ProjectManagerService(UserDAO user_dao) {
         this.user_dao = user_dao;

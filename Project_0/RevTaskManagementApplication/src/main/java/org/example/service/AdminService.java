@@ -15,6 +15,12 @@ public class AdminService {
     ProjectDAO project_dao;
     TeamDetailDAO team_detail_dao;
 
+    public AdminService(UserDAO user_dao,ProjectDAO pdao,TeamDetailDAO tdao){
+        this.user_dao=user_dao;
+        this.project_dao=pdao;
+        this.team_detail_dao=tdao;
+    }
+
     public AdminService(UserDAO user_dao) {
         this.user_dao = user_dao;
         project_dao = new ProjectDAO();
